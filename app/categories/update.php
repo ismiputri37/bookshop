@@ -19,8 +19,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form method="post" action="">
-    Category Name: <input type="text" name="name" value="<?php echo $category['name']; ?>">
-    <input type="hidden" name="id" value="<?php echo $category['id']; ?>">
-    <input type="submit" value="Update Category">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Edit Category</h3>
+    <form method="post" action="">
+        Category Name: <input type="text" name="name" value="<?php echo $category['name']; ?>">
+        <input type="hidden" name="id" value="<?php echo $category['id']; ?>">
+        <input type="submit" value="Update Category">
+    </form>
+</body>
+</html>
+
